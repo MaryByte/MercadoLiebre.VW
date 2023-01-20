@@ -2,15 +2,18 @@ let express = require('express');
 
 const path = require('path');
 
+const port = process.env.PORT || 3000;
+
 let app = express();
+
 
 const publicPath = path.resolve(__dirname, './public');
 app.use( express.static(publicPath));
 
 
-app.listen (3000, ()=> {
-    console.log ("servidor corriendo en puerto 3000")
-});
+
+app.listen (port, ()=> 
+    console.log ("servidor corriendo en puerto ${port}"));
 
 app.get ("/", (req, res)=>{
     res.sendFile (__dirname + "/Views/home.html")
