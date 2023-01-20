@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <title>Signin</title>
+</head>
+
+<body>
+<!-- ----------------------HEADER-------------------------- -->
+    <header>
+        <section class="contenedor-logo-busqueda-cuotas">
+            <div class="logo">
+                 <a href="/"><img src="/images/logo-mercado-liebre.svg"></a> 
+            </div>
+    </header>
+
+    <!-- ----------------------MAIN-------------------------- -->
+ <main class="form-container">
+   
+    <form class="estilos-form">
+        <h1>¡Registrate!</h1>
+
+        <!-- --------------name----------------- -->
+        <div class="cajas-dentro-del-form">
+             <input type="text" name="userName" placeholder="Nombre y apellido" >
+             <!-- <span class="feedback"></span> -->
+        </div>
+        <!-- --------------user name----------------- -->
+        <div class="cajas-dentro-del-form">
+            <input type="text" name="userName" minlength="8" placeholder="Nombre de usuari@">
+       </div>
+        <!-- --------------fecha nacimiento----------------- -->
+       <div class="cajas-dentro-del-form" class="nacimiento">
+        <label class="label-form">Fecha de nacimiento</label> 
+        <input type="date" name="date">
+       </div>
+        <!-- --------------domicilio----------------- -->
+       <div class="cajas-dentro-del-form">
+        <input type="text" name="domicilio" placeholder="Domicilio">
+       </div>
+        <!-- --------------comprador/vendedor checkbox----------------- -->
+       <div class="cajas-dentro-del-form">
+         <label class="label-form">Perfil del usuario</label>
+         <br>
+            <label class="items"><input type="radio" name="PerfilDelUsuario" class="checkbox-register">Comprador</label>
+            <label class="items"><input type="radio" name="PerfilDelUsuario" class="checkbox-register">Vendedor</label>
+       </div>
+        <!-- --------------intereses checkbox----------------- -->
+        <div class="cajas-dentro-del-form">
+            <label class="label-form">Intereses</label>
+            <div class="contenedor-intereses">
+              <label class="items"><input type="checkbox" name="intereses" value="Electro" class="checkbox-register">Electro</label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="Moda" class="checkbox-register">Moda </label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="Hogar" class="checkbox-register">Hogar </label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="Jugueteria" class="checkbox-register">Juguetería </label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="VidaSana" class="checkbox-register">Vida sana </label>
+              <br>
+              <!-- <input type="checkbox" name="intereses" value="Electro" id="electronica">
+                <label class="prueba" for="electronica">Electro </label> -->
+
+            </div>
+        </div>
+       
+       <!-- --------------contraseña----------------- -->
+        <div class="cajas-dentro-del-form">
+             <input type="password" name="password" placeholder="Insertá contraseña" class="cajas-para-escribir">
+        </div>
+        <!-- --------------confirmar contraseña----------------- -->
+        <div class="cajas-dentro-del-form">
+            <input type="password" name="password" placeholder="Confirmá contraseña" class="cajas-para-escribir">
+       </div>
+
+        <!-- --------------botones----------------- -->
+        <div class="cajas-dentro-del-form">
+           <button type="submit" class="button-form">Enviar</button>
+        </div>
+
+        <div class="cajas-dentro-del-form">
+            <button type="reset" class="button-form">Borrar</button>
+         </div>
+  
+  
+      </form>
+    
+ </main>
+
+     <!-- ----------------------FOOTER-------------------------- -->
+<footer>
+        <section class="copyright">
+            <strong >Copyright © 1999-2020 MercadoLiebre S.R.L.</strong>  
+       </section>
+  </footer>
+</body>
+</html>
